@@ -40,13 +40,13 @@ public class EnfermidadePessoal {
 	private String comentario;
 	@Column(name = "statusDeEnfermidade")
 	private String statusDeEnfermidade;
-	@OneToOne
+	//@OneToOne
 	@JoinColumn(name = "fk_idEnfermidade")
 	private Enfermidade enfermidade;
-	@ManyToOne
+	//@ManyToOne
 	@JoinColumn(name = "fk_idPaciente", insertable = false, updatable = false)
 	private Paciente paciente;
-	@ManyToOne
+	//@ManyToOne
 	@JoinColumn(name = "fk_idAtendimento", insertable = false, updatable = false)
 	private Atendimento atendimento;
 

@@ -9,6 +9,10 @@
  */
 package br.com.hospitalif.model;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,9 +22,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-
-import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * @author Daniel
@@ -43,12 +44,12 @@ public class Entrada {
 	private Date dataSaida;
 	@Column(name = "statusEntrada")
 	private String statusEntrada;
-	@ManyToOne
+	//@ManyToOne
 	@JoinColumn(name = "fk_idPaciente", insertable = false, updatable = false)
 	private Paciente paciente;
-	@OneToMany
+	//@OneToMany
 	@JoinColumn(name = "fk_idAtendimento")
-	private ArrayList<Atendimento> situacaoDePaciente;
+	private List<Atendimento> situacaoDePaciente;
 
 	/**
 	 * 
@@ -130,14 +131,14 @@ public class Entrada {
 	/**
 	 * @return the situacaoDePaciente
 	 */
-	public ArrayList<Atendimento> getSituacaoDePaciente() {
+	public List<Atendimento> getSituacaoDePaciente() {
 		return situacaoDePaciente;
 	}
 
 	/**
 	 * @param situacaoDePaciente the situacaoDePaciente to set
 	 */
-	public void setSituacaoDePaciente(ArrayList<Atendimento> situacaoDePaciente) {
+	public void setSituacaoDePaciente(List<Atendimento> situacaoDePaciente) {
 		this.situacaoDePaciente = situacaoDePaciente;
 	}
 

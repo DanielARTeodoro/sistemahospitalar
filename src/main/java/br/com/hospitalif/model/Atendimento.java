@@ -9,6 +9,10 @@
  */
 package br.com.hospitalif.model;
 
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -19,9 +23,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-
-import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * @author Daniel
@@ -50,21 +51,21 @@ public class Atendimento {
 	@Column(name = "data")
 	private Date data;
 
-	@OneToOne
+	//@OneToOne
 	@JoinColumn(name = "fk_idEnfermeiro")
 	private Enfermeiro enfermeiro;
 
-	@OneToOne
+	//@OneToOne
 	@JoinColumn(name = "fk_idMedico")
 	private Medico medico;
 
-	@ManyToOne
+	//@ManyToOne
 	@JoinColumn(name = "fk_idEntrada", insertable = false, updatable = false)
 	private Entrada entrada;
 
-	@OneToMany
+	//@OneToMany
 	@JoinColumn(name = "fk_idEnfermidadePessoal")
-	private ArrayList<EnfermidadePessoal> doenca;
+	private List<EnfermidadePessoal> doenca;
 
 	/**
 	 * 
@@ -202,14 +203,14 @@ public class Atendimento {
 	/**
 	 * @return the doenca
 	 */
-	public ArrayList<EnfermidadePessoal> getDoenca() {
+	public List<EnfermidadePessoal> getDoenca() {
 		return doenca;
 	}
 
 	/**
 	 * @param doenca the doenca to set
 	 */
-	public void setDoenca(ArrayList<EnfermidadePessoal> doenca) {
+	public void setDoenca(List<EnfermidadePessoal> doenca) {
 		this.doenca = doenca;
 	}
 

@@ -9,6 +9,9 @@
  */
 package br.com.hospitalif.model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,7 +21,6 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
-import java.util.ArrayList;
 
 /**
  * @author Daniel
@@ -42,11 +44,11 @@ public class Paciente {
 
 	@OneToMany
 	@JoinColumn(name = "fk_idEnfermidadePessoal")
-	private ArrayList<EnfermidadePessoal> doenca;
+	private List<EnfermidadePessoal> doenca;
 
 	@OneToMany
 	@JoinColumn(name = "fk_idEntrada")
-	private ArrayList<Entrada> historico;
+	private List<Entrada> historico;
 
 	/**
 	 * 
@@ -70,20 +72,6 @@ public class Paciente {
 	}
 
 	/**
-	 * @return the doenca
-	 */
-	public ArrayList<EnfermidadePessoal> getDoenca() {
-		return doenca;
-	}
-
-	/**
-	 * @param doenca the doenca to set
-	 */
-	public void setDoenca(ArrayList<EnfermidadePessoal> doenca) {
-		this.doenca = doenca;
-	}
-
-	/**
 	 * @return the pessoa
 	 */
 	public Pessoa getPessoa() {
@@ -98,16 +86,30 @@ public class Paciente {
 	}
 
 	/**
+	 * @return the doenca
+	 */
+	public List<EnfermidadePessoal> getDoenca() {
+		return doenca;
+	}
+
+	/**
+	 * @param doenca the doenca to set
+	 */
+	public void setDoenca(List<EnfermidadePessoal> doenca) {
+		this.doenca = doenca;
+	}
+
+	/**
 	 * @return the historico
 	 */
-	public ArrayList<Entrada> getHistorico() {
+	public List<Entrada> getHistorico() {
 		return historico;
 	}
 
 	/**
 	 * @param historico the historico to set
 	 */
-	public void setHistorico(ArrayList<Entrada> historico) {
+	public void setHistorico(List<Entrada> historico) {
 		this.historico = historico;
 	}
 

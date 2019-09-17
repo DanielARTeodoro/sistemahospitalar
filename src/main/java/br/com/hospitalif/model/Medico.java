@@ -22,7 +22,7 @@ import javax.persistence.Table;
  */
 
 @Entity
-@PrimaryKeyJoinColumn(name = "idFuncionario")
+//@PrimaryKeyJoinColumn(name = "idFuncionario")
 @Table(name = "tb_medico")
 
 public class Medico extends Funcionario {

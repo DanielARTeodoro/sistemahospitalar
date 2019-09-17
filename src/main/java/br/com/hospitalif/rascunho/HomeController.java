@@ -9,10 +9,16 @@
  */
 package br.com.hospitalif.rascunho;
 
-/**
+/*
+ * /**
+ * 
  * @author Daniel
  *
+ *
  */
-public class HomeController {
-
-}
+/*
+ * public class HomeController {
+ * 
+ * }
+ * 
+ */
