@@ -1,0 +1,52 @@
+@charset "ISO-8859-1";
+
+
+.Atendimento{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+.peso{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+.altura{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+.data{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+.ComentarioEnfermeiro{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+.ComentarioMedico{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+.ComentarioEnfermeiro{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+
+/*
+
+.Doença{
+	font-size: 5rem;
+	color: #000;
+	text-align: center;
+}
+#botão{
+	color:#000;
+	background-color:#0 255 255;
+}
+
+*/

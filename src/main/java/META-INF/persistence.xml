@@ -1,0 +1,42 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
+	version="2.1">
+
+	<persistence-unit name="bdPU"
+		transaction-type="RESOURCE_LOCAL">
+		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+		<class>br.com.hospitalif.model.Entrada</class>
+		<class>br.com.hospitalif.model.Atendimento</class>
+		<class>br.com.hospitalif.model.Enfermeiro</class>
+		<class>br.com.hospitalif.model.Enfermidade</class>
+		<class>br.com.hospitalif.model.EnfermidadePessoal</class>
+		<class>br.com.hospitalif.model.Funcionario</class>
+		<class>br.com.hospitalif.model.Gerente</class>
+		<class>br.com.hospitalif.model.Medico</class>
+		<class>br.com.hospitalif.model.Paciente</class>
+		<class>br.com.hospitalif.model.Pessoa</class>
+
+
+		<properties>
+			<!-- dados da conexao -->
+			<property name="javax.persistence.jdbc.driver"
+				value="com.mysql.jdbc.Driver" />
+			<property name="javax.persistence.jdbc.url"
+				value="jdbc:mysql://localhost:3306/bd" />
+			<property name="javax.persistence.jdbc.user" value="root" />
+			<property name="javax.persistence.jdbc.password" value=" " />
+
+			<!-- propriedades do hibernate -->
+			<property name="hibernate.dialect"
+				value="org.hibernate.dialect.MySQLInnoDBDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.format_sql" value="true" />
+
+			<!-- atualiza o banco, gera as tabelas se for preciso -->
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+
+		</properties>
+	</persistence-unit>
+</persistence>

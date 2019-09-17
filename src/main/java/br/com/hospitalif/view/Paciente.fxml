@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.hospitalif.controller.PacienteController">
+	<children>
+		<Pane prefHeight="400.0" prefWidth="600.0">
+			<children>
+            <Button fx:id="btnCadastrar9" layoutX="227.0" layoutY="332.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="30.0" prefWidth="146.0" text="OK">
+               <font>
+                  <Font name="Agency FB" size="24.0" />
+               </font>
+            </Button>
+            <Text layoutX="264.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PACIENTE" />
+            <Text layoutX="140.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doença" />
+            <Text layoutX="431.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historico" />
+            <Pane layoutX="12.0" layoutY="64.0" prefHeight="253.0" prefWidth="296.0">
+               <children>
+                  <TableView fx:id="tabPaciente" layoutX="1.0" prefHeight="253.0" prefWidth="296.0">
+                    <columns>
+                      <TableColumn fx:id="tabPaciente0" prefWidth="160.0" text="Comentario" />
+                        <TableColumn fx:id="tabPaciente1" prefWidth="134.0" text="Status da Enfermidade" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane layoutX="329.0" layoutY="64.0" prefHeight="253.0" prefWidth="251.0">
+               <children>
+                  <TableView fx:id="tabPaciente2" layoutX="-4.0" prefHeight="253.0" prefWidth="254.0">
+                    <columns>
+                      <TableColumn fx:id="tabPaciente3" text="Data Entrada" />
+                        <TableColumn fx:id="tabPaciente4" prefWidth="67.0" text="Data Saida" />
+                        <TableColumn fx:id="tabPaciente5" prefWidth="111.0" text="Status Entrada" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+			</children>
+		</Pane>
+	</children>
+</fx:root>

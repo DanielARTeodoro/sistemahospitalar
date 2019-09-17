@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.hospitalif.controller.HomeController">
+	<children>
+		<Pane prefHeight="400.0" prefWidth="600.0">
+			<children>
+				<Button fx:id="btnLogar" layoutX="22.0" layoutY="59.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction0" prefHeight="34.0" prefWidth="146.0" text="Administrador">
+					<font>
+						<Font name="Agency FB" size="18.0" />
+					</font>
+				</Button>
+				<Button fx:id="btnCadastrar" layoutX="419.0" layoutY="87.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction8" prefHeight="34.0" prefWidth="154.0" text="Atendente">
+					<font>
+						<Font name="Agency FB" size="18.0" />
+					</font>
+				</Button>
+            <Button fx:id="btnCadastrar1" layoutX="419.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction01" prefHeight="34.0" prefWidth="154.0" text="Atendimento">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar3" layoutX="22.0" layoutY="193.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction4" prefHeight="34.0" prefWidth="146.0" text="Enfermeiro">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar4" layoutX="220.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction6" prefHeight="34.0" prefWidth="154.0" text="Enfermidade">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar5" layoutX="221.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction7" prefHeight="34.0" prefWidth="154.0" text="Enfermidade Pessoal">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar6" layoutX="419.0" layoutY="156.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction10" prefHeight="34.0" prefWidth="154.0" text="Entrada">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar7" layoutX="22.0" layoutY="127.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction1" prefHeight="34.0" prefWidth="146.0" text="Funcionario">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar8" layoutX="22.0" layoutY="93.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="34.0" prefWidth="146.0" text="Gerente">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar10" layoutX="22.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction5" prefHeight="34.0" prefWidth="146.0" text="Medico">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar11" layoutX="419.0" layoutY="121.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction9" prefHeight="32.0" prefWidth="154.0" text="Paciente">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnCadastrar12" layoutX="22.0" layoutY="160.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction3" prefHeight="34.0" prefWidth="146.0" text="Pessoa">
+               <font>
+                  <Font name="Agency FB" size="18.0" />
+               </font>
+            </Button>
+            <Text layoutX="240.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOME" textAlignment="CENTER" wrappingWidth="120.9765625">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+            </Text>
+			</children>
+		</Pane>
+	</children>
+</fx:root>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" type="Pane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.hospitalif.controller.AtendimentoController">
+   <children>
+      <Pane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <Text layoutX="265.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Atendimento" />
+            <Text layoutX="86.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentario Enfermeiro" />
+            <Text layoutX="371.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comentario medico" />
+            <Text layoutX="40.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Peso" />
+            <Text layoutX="196.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Altura" />
+            <Text layoutX="359.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data" />
+            <Text layoutX="198.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Doença" />
+            <TextField fx:id="txtAtendimento" layoutX="72.0" layoutY="64.0" prefHeight="25.0" prefWidth="96.0" />
+            <TextField fx:id="txtAtendimento0" layoutX="240.0" layoutY="65.0" prefHeight="25.0" prefWidth="105.0" />
+            <TextArea fx:id="txtAtendimento2" layoutX="19.0" layoutY="119.0" prefHeight="51.0" prefWidth="257.0" />
+            <TextArea fx:id="txtAtendimento3" layoutX="305.0" layoutY="119.0" prefHeight="51.0" prefWidth="257.0" />
+            <Button fx:id="txtAtendimento7" layoutX="459.0" layoutY="290.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="59.0" prefWidth="115.0" text="Registrar" />
+            <DatePicker fx:id="txtAtendimento1" layoutX="393.0" layoutY="65.0" prefHeight="25.0" prefWidth="154.0" />
+            <Pane layoutX="19.0" layoutY="195.0" prefHeight="163.0" prefWidth="419.0">
+               <children>
+                  <TableView fx:id="txtAtendimento4" prefHeight="163.0" prefWidth="419.0">
+                    <columns>
+                      <TableColumn fx:id="txtAtendimento5" prefWidth="275.0" text="Comentario" />
+                      <TableColumn fx:id="txtAtendimento6" prefWidth="143.0" text="Status da Enfermidade" />
+                    </columns>
+                  </TableView>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</fx:root>
