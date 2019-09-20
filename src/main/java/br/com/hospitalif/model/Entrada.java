@@ -44,10 +44,10 @@ public class Entrada {
 	private Date dataSaida;
 	@Column(name = "statusEntrada")
 	private String statusEntrada;
-	//@ManyToOne
+	@ManyToOne
 	@JoinColumn(name = "fk_idPaciente", insertable = false, updatable = false)
 	private Paciente paciente;
-	//@OneToMany
+	@OneToMany
 	@JoinColumn(name = "fk_idAtendimento")
 	private List<Atendimento> situacaoDePaciente;
 

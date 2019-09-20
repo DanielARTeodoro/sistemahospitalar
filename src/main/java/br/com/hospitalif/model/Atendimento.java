@@ -51,19 +51,19 @@ public class Atendimento {
 	@Column(name = "data")
 	private Date data;
 
-	//@OneToOne
+	@OneToOne
 	@JoinColumn(name = "fk_idEnfermeiro")
 	private Enfermeiro enfermeiro;
 
-	//@OneToOne
+	@OneToOne
 	@JoinColumn(name = "fk_idMedico")
 	private Medico medico;
 
-	//@ManyToOne
+	@ManyToOne
 	@JoinColumn(name = "fk_idEntrada", insertable = false, updatable = false)
 	private Entrada entrada;
 
-	//@OneToMany
+	@OneToMany
 	@JoinColumn(name = "fk_idEnfermidadePessoal")
 	private List<EnfermidadePessoal> doenca;
 

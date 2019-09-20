@@ -42,7 +42,7 @@ public class Funcionario {
 	private String senha;
 	@Column(name = "statusDeUsuario")
 	private String statusDeUsuario;
-	//@OneToOne
+	@OneToOne
 	@JoinColumn(name = "fk_idPessoa")
 	private Pessoa pessoa;
 
