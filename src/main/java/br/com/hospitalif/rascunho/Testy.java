@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package br.com.hospitalif.app;
+package br.com.hospitalif.rascunho;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -19,6 +19,7 @@ import org.hibernate.cfg.Settings;*/
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import br.com.hospitalif.app.Inicio;
 import br.com.hospitalif.model.Pessoa;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;

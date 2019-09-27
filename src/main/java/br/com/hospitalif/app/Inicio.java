@@ -67,7 +67,7 @@ public class Inicio extends Application {
 
 		System.out.println("Carregando... ");
 
-		launch(args);
+		///launch(args);
 		
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("bdPU");
 		EntityManager em = emf.createEntityManager();

@@ -14,7 +14,7 @@ package br.com.hospitalif.util;
 public interface ConexaoUtil {
 
 	String user = "root";
-	String pass = " ";
+	String pass = "";
 	String bd = "bd";
 
 }
