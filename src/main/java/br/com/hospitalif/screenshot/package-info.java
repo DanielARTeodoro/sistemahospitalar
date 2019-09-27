@@ -4,4 +4,4 @@
  * and open the template in the editor.
  */
 
-package br.com.hospitalif.js;
+package br.com.hospitalif.screenshot;
