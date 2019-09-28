@@ -60,8 +60,8 @@ public class Inicio extends Application {
 
 	public static void main(String[] args) {
 
-		// Pessoa pessoa = new Pessoa();
-		// pessoa.setNome("Pessoa");
+		//Pessoa pessoa = new Pessoa();
+		//pessoa.setNome("Pessoa");
 
 		
 
@@ -79,13 +79,13 @@ public class Inicio extends Application {
 
 		// EntityManager manager = factory.createEntityManager();
 
-		// em.getTransaction().begin();
-		// em.persist(pessoa);
-		// em.getTransaction().commit();
+		 //em.getTransaction().begin();
+		 //em.persist(pessoa);
+		 //em.getTransaction().commit();
 
-		// System.out.println(em);
+		 //System.out.println(em);
 
-		em.close();
+		//em.close();
 
 	}
 
