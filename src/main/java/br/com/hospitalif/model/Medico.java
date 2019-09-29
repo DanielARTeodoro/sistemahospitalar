@@ -23,7 +23,7 @@ import javax.persistence.Table;
 @Entity
 //@PrimaryKeyJoinColumn(name = "idFuncionario")
 @Table(name = "tb_medico")
-@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+@Inheritance(strategy = InheritanceType.JOINED)
 public class Medico extends Funcionario {
 
 	/// @Id
