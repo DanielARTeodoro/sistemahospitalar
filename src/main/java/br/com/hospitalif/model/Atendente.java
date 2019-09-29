@@ -14,7 +14,7 @@ package br.com.hospitalif.model;
  *
  */
 
-public class Atendente {
+public class Atendente extends Gerente {
 
 	/**
 	 * 
