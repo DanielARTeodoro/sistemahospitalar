@@ -1,9 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  * 
  */
@@ -20,13 +14,14 @@ import org.apache.logging.log4j.Logger;
  * @author Daniel
  *
  */
-public class AtendenteDAO {
+public class FuncionarioPessoaDAO {
 
-	static final Logger logger = LogManager.getLogger(AtendenteDAO.class.getName());
+	
+	static final Logger logger = LogManager.getLogger(FuncionarioPessoaDAO.class.getName());
 	final EntityManagerFactory emf = Persistence.createEntityManagerFactory("bdPU");
 	protected EntityManager em = null;
 
-	public AtendenteDAO() {
+	public FuncionarioPessoaDAO() {
 		super();
 		if (em == null) {
 			em = emf.createEntityManager();
@@ -34,12 +29,6 @@ public class AtendenteDAO {
 
 	}
 
-	/*
-	 * 
-	 * public List<Atendente> consultarTodos() {
-	 * 
-	 * return em.createQuery("FROM " + Atendente.class.getName()).getResultList(); }
-	 * 
-	 */
+	
 
 }

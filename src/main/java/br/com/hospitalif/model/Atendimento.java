@@ -9,7 +9,6 @@
  */
 package br.com.hospitalif.model;
 
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -51,13 +50,17 @@ public class Atendimento {
 	@Column(name = "data")
 	private Date data;
 
-	@OneToOne
-	@JoinColumn(name = "fk_idEnfermeiro")
-	private Enfermeiro enfermeiro;
+	// @OneToOne
+	// @JoinColumn(name = "fk_idEnfermeiro")
+	// private Enfermeiro enfermeiro;
+
+	// @OneToOne
+	// @JoinColumn(name = "fk_idMedico")
+	// private Medico medico;
 
 	@OneToOne
-	@JoinColumn(name = "fk_idMedico")
-	private Medico medico;
+	@JoinColumn(name = "fk_idFuncionarioPessoa")
+	private FuncionarioPessoa FuncionarioPessoa;
 
 	@ManyToOne
 	@JoinColumn(name = "fk_idEntrada", insertable = false, updatable = false)
@@ -159,31 +162,17 @@ public class Atendimento {
 	}
 
 	/**
-	 * @return the enfermeiro
+	 * @return the funcionarioPessoa
 	 */
-	public Enfermeiro getEnfermeiro() {
-		return enfermeiro;
+	public FuncionarioPessoa getFuncionarioPessoa() {
+		return FuncionarioPessoa;
 	}
 
 	/**
-	 * @param enfermeiro the enfermeiro to set
+	 * @param funcionarioPessoa the funcionarioPessoa to set
 	 */
-	public void setEnfermeiro(Enfermeiro enfermeiro) {
-		this.enfermeiro = enfermeiro;
-	}
-
-	/**
-	 * @return the medico
-	 */
-	public Medico getMedico() {
-		return medico;
-	}
-
-	/**
-	 * @param medico the medico to set
-	 */
-	public void setMedico(Medico medico) {
-		this.medico = medico;
+	public void setFuncionarioPessoa(FuncionarioPessoa funcionarioPessoa) {
+		FuncionarioPessoa = funcionarioPessoa;
 	}
 
 	/**

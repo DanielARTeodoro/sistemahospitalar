@@ -1,12 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- * 
- */
 package br.com.hospitalif.model;
 
 import javax.persistence.Column;
@@ -14,22 +5,17 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
-/**
- * @author Daniel
- *
- */
-
 @Entity
-/// @Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
-@Table(name = "tb_funcionario")
 
-public class Funcionario {
+@Table(name = "tb_FuncionarioPessoa")
+
+public class FuncionarioPessoa {
+
+	/// Funcionario
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -46,10 +32,24 @@ public class Funcionario {
 	@JoinColumn(name = "fk_idPessoa")
 	private Pessoa pessoa;
 
-	/**
-	 * 
-	 */
-	public Funcionario() {
+	/// Enfermeiro
+
+	@Column(name = "numeroDeRegistroEnfermeiro")
+	private int numeroDeRegistroEnfermeiro;
+
+	// Gerente
+
+	@Column(name = "cargo")
+	private String cargo;
+
+	/// Medico
+
+	@Column(name = "numeroDeRegistroMedico")
+	private int numeroDeRegistroMedico;
+	@Column(name = "especialidade")
+	private String especialidade;
+
+	public FuncionarioPessoa() {
 		// TODO Auto-generated constructor stub
 	}
 
@@ -121,6 +121,77 @@ public class Funcionario {
 	 */
 	public void setPessoa(Pessoa pessoa) {
 		this.pessoa = pessoa;
+	}
+
+	/**
+	 * @return the numeroDeRegistroEnfermeiro
+	 */
+	public int getNumeroDeRegistroEnfermeiro() {
+		return numeroDeRegistroEnfermeiro;
+	}
+
+	/**
+	 * @param numeroDeRegistroEnfermeiro the numeroDeRegistroEnfermeiro to set
+	 */
+	public void setNumeroDeRegistroEnfermeiro(int numeroDeRegistroEnfermeiro) {
+		this.numeroDeRegistroEnfermeiro = numeroDeRegistroEnfermeiro;
+	}
+
+	/**
+	 * @return the cargo
+	 */
+	public String getCargo() {
+		return cargo;
+	}
+
+	/**
+	 * @param cargo the cargo to set
+	 */
+	public void setCargo(String cargo) {
+		this.cargo = cargo;
+	}
+
+	/**
+	 * @return the numeroDeRegistroMedico
+	 */
+	public int getNumeroDeRegistroMedico() {
+		return numeroDeRegistroMedico;
+	}
+
+	/**
+	 * @param numeroDeRegistroMedico the numeroDeRegistroMedico to set
+	 */
+	public void setNumeroDeRegistroMedico(int numeroDeRegistroMedico) {
+		this.numeroDeRegistroMedico = numeroDeRegistroMedico;
+	}
+
+	/**
+	 * @return the especialidade
+	 */
+	public String getEspecialidade() {
+		return especialidade;
+	}
+
+	/**
+	 * @param especialidade the especialidade to set
+	 */
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
+	}
+
+	/// Administrador
+
+	public int cadastrarFuncionario() {
+
+		return 0;
+	}
+
+	/// Atendente
+
+	public int cadastrarPaciente() {
+
+		return 0;
+
 	}
 
 }

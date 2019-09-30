@@ -9,14 +9,11 @@
 		<provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
 		<class>br.com.hospitalif.model.Entrada</class>
 		<class>br.com.hospitalif.model.Atendimento</class>
-		<class>br.com.hospitalif.model.Enfermeiro</class>
 		<class>br.com.hospitalif.model.Enfermidade</class>
 		<class>br.com.hospitalif.model.EnfermidadePessoal</class>
-		<class>br.com.hospitalif.model.Funcionario</class>
-		<class>br.com.hospitalif.model.Gerente</class>
-		<class>br.com.hospitalif.model.Medico</class>
 		<class>br.com.hospitalif.model.Paciente</class>
 		<class>br.com.hospitalif.model.Pessoa</class>
+		<class>br.com.hospitalif.model.FuncionarioPessoa</class>
 
 
 		<properties>
