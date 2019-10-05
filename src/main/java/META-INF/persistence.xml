@@ -21,13 +21,17 @@
 			<property name="javax.persistence.jdbc.driver"
 				value="com.mysql.jdbc.Driver" />
 			<property name="javax.persistence.jdbc.url"
-				value="jdbc:mysql://localhost:3306/bd" />
+				value="jdbc:mysql://localhost:3306/tads4_bd" />
 			<property name="javax.persistence.jdbc.user" value="root" />
 			<property name="javax.persistence.jdbc.password" value="" />
 
 			<!-- propriedades do hibernate -->
 			<property name="hibernate.dialect"
-				value="org.hibernate.dialect.MySQLInnoDBDialect" />
+				value="org.hibernate.dialect.MySQL5Dialect" />
+			<!-- org.hibernate.dialect.MySQL5Dialect 
+			or
+			org.hibernate.dialect.MySQLInnoDBDialect
+			-->
 			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
 

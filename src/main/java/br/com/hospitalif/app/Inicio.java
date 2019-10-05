@@ -72,18 +72,18 @@ public class Inicio extends Application {
 		EntityManagerFactory emf = Persistence.createEntityManagerFactory("bdPU");
 		EntityManager em = emf.createEntityManager();
 		
-		em.getTransaction().begin();
+		//em.getTransaction().begin();
 		
 		// EntityManagerFactory factory =
 		// Persistence.createEntityManagerFactory("bdPU");
 
 		// EntityManager manager = factory.createEntityManager();
 
-		 //em.getTransaction().begin();
+		// em.getTransaction().begin();
 		 //em.persist(pessoa);
 		 //em.getTransaction().commit();
 
-		 //System.out.println(em);
+		 System.out.println(em);
 
 		//em.close();
 

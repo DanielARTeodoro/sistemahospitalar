@@ -15,6 +15,6 @@ public interface ConexaoUtil {
 
 	String user = "root";
 	String pass = "";
-	String bd = "bd";
+	String bd = "tads4_bd";
 
 }
